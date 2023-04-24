@@ -4,31 +4,69 @@
 }
 
 body{
-    /* background-image: url(./img/hotelEntrada.jpg); */
-    background-color: #423210ad;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    /* margin: 0;
-    padding: 0; */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
+/* ----------  NAV  --------------- */
 
 .encabezado {
-    background-color: rgb(221, 221, 197);
+    background-color: whitesmoke;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 100px;
+    height: 70px;
 }
 
-.containerBtn { 
+.encabezado #botMenu {
+    display: none;
+}
+
+.encabezado label {
+    display: none;
+}
+
+
+.encabezado ul {
+    list-style: none;
+    display: flex; /* por defecto tiene "flex-direction: row;" */
+    /* gap: 10px; */
+}
+
+
+/*  --------  BOTONES TIPO LISTA -------------
+.encabezado ul li {
+    border-right: 1px solid #644d30;
+    padding: 10px 0;
+    transition: .4s ease-in-out all;
+}
+
+.encabezado ul li a {
+    text-decoration: none;
+    cursor: default;
+    padding: 30px 20px;
+    color: #644d30;
+}
+
+.encabezado ul li:hover {
+    nav-down: 20px;
+} */
+
+/* .encabezado ul li:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}  
+
+--------END   BOTONES TIPO LISTA -------------  */
+
+/* .containerBtn { 
+    background-color: aqua;
     display: flex;
-    gap: .3em;
-}
+    gap: em;
+} */
 
-.btn-head {
-    background-color: #423210ad;
+.btn-navBar {
+    background-color: #644d30;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,41 +76,29 @@ body{
     margin-left: 3px;
     border-radius: 4px;
     text-decoration: none;
-    transition-duration: 0.7s;
+    transition-duration: 400ms;
 }
 
-.btn-head:hover {
-    background-color: #ffffff;
-    color: #423210ad;
+.btn-navBar:hover {
+    background-color: #644d3040;
+    color: #644d30;
 }
 
-
-/* .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 180px;
-} */
 
 .titulo {
-    background-color: #D88D01;
+    /* background-color: #D88D01; */
     width: 20em;
     height: auto;
 }
 
 
-h1 {
-    font-size: 1.8em;
+.titulo h1 {
+    font-size: 2em;
     text-align: center;
+    color: #644d30;
 }
 
-img {
-    background-color: #D88D01;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
+/* ----------  END NAV  --------------- */
 
 .container-img {
     min-height: 100vh;
@@ -103,7 +129,13 @@ img {
 } */
 
 .container-txt{
-    background-color: #D88D01;
+    background-color: #4e3609;
+}
+
+.text {
+    font-size: 1.8em;
+    text-align: center;
+    color: #ffffff;
 }
 
 .bienvenidos {
@@ -111,7 +143,7 @@ img {
     justify-content: center;
     align-items: center ;
     flex-direction: column;
-    padding: 2em;
+    padding: .6em;
 }
 
 .contacto{
@@ -120,23 +152,79 @@ img {
 }
 
 .container-medio {
-    background-color: rgb(221, 221, 197);
-    display: flex;
-    /* justify-content: center; */
-    padding: 1em 0 10em 0;
-    align-items: center;
-    gap: 1em;
+ background-color: rgb(221, 221, 197);
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+
+
 }
 
 .habitaciones {
     background-color: rgb(72, 100, 123);
-    /* padding: 15em; */
-    width: 30em;
-    height: 25em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 33%;    
 }
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+.content-servicios-principal {
+    background-color:  rgb(221, 221, 197);
+    display: flex;  
+    align-items: center;
+    padding: 4em;
+
+}
+
+.content-servicios-principal p{
+    font-size: 3em;
+    padding: 1em .2em;
+    border-left: 3px solid #644d30;
+}
+
+
+.content-servicios ul{
+    background-color: #644d30;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.servicios {
+    list-style: none;
+}
+
+.content-wifi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+    gap: 1em;
+    filter: invert(95%);
+}
+
+.link-wifi {
+    transition: 400ms;
+}
+
+.link-wifi:hover {
+    filter: invert(35%);
+} 
+
+
+.icon-serv {
+    width: 3.2em;
+} 
+
+
+.conocernos {
+    background-color: #ffffff;
+    padding: 15em;
+}
+ 
 
 
 .footer {

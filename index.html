@@ -5,59 +5,117 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./icons/hotel-favicon.svg">
     <link rel="stylesheet" href="styles.css">
     <title>Trabajo Practico</title>
 </head>
 
 <body>
-    <nav class="encabezado">
-        <div class="containerBtn">
-            <a class="btn-head" href="./index.html">HOTEL</a>
-            <a class="btn-head" href="./habitaciones.html">HABITACIONES</a>
-            <a class="btn-head" href="./contactanos.html">GALERIA</a>
-            <a class="btn-head" href="./contactanos.html">SERVICIOS</a>
-            <a class="btn-head" href="./contactanos.html">ENTORNO</a>
-            <a class="btn-head" href="./contactanos.html">CONTACTO</a>
-        </div>
-        <div class="titulo">
-            <h1>HOTEL PARAMOUNT</h1>
-        </div>
-        <div class="containerBtn">
-            <a class="btn-head" href="index.html">Reserva ahora</a>
-        </div>
-    </nav>
+    <header>
+        <nav class="encabezado">
+            
+            <input id="botMenu" type="checkbox">
+            <label for="botMenu"> <i class="fas fa-bars fa-lg"></i> </label>  <!-- El for emparenta el input con el label -->
+            <!-- id="hamburguer" class="containerBtn" -->
+            <ul>
+                <li><a id="hotel" class="btn-navBar" href="./index.html">HOTEL</a></li>
+                <li><a id="habitacion" class="btn-navBar" href="./habitaciones.html">HABITACIONES</a></li>
+                <li><a id="galeria" class="btn-navBar" href="./contactanos.html">GALERIA</a></li>
+                <li><a id="servicios" class="btn-navBar" href="./contactanos.html">SERVICIOS</a></li>
+                <li><a id="contacto" class="btn-navBar" href="./contactanos.html">CONTACTO</a></li>
+            </ul>
 
-    <div class="container-img">
-        <div class="container-txt">
-            <div class="text">
-                <h2>Lujo & Confort en un entorno soñado</h2>
+            <div class="titulo">
+                <h1>HOTEL PARAMOUNT</h1>
+            </div>
+
+            <div class="containerBtn">
+                <a class="btn-navBar" href="index.html">Reserva ahora</a>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <div class="container-img">
+            <div class="container-txt">
+                <div class="text">
+                    <h2>Lujo & Confort <br> en un entorno soñado</h2>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="bienvenidos">
-        <h2>BIENVENIDOS</h2>
-        <h2>Hotel Paramount</h2>
-    </div>
+        <div class="bienvenidos">
+            <h2>BIENVENIDOS</h2>
+            <h2>Hotel Paramount</h2>
+        </div>
 
-    <div class="container-medio">
-        <div class="habitaciones">
-            <h3>FOTOS DE HABITACIONES box 1</h3>
-        </div>
-        <div class="habitaciones">
-            <h3>FOTOS DE HABITACIONES box 2</h3>
-        </div>
-    </div>
+        <div class="container-medio">
 
-    <footer class="footer">
-        <div>
-            <p class="marca">(logos redes soc.)</p>
-        </div>
-        <div>
-            <p class="marca">Derechos reservados &copy;2023</p>
-        </div>
-    </footer>
 
+            <div class="habitaciones">
+                <img src="img/imagen_muestra1.jpg" alt="escritorio">
+            </div>
+
+
+            
+            <div class="habitaciones">
+                <img src="img/imagen_muestra2.jpeg" alt="desayuno">
+            </div>
+
+
+
+
+            <div class="habitaciones">
+                <p>Trato profesional pero totalmente familiar. En nuestro hotel encontraras detalles, mimo y dedicación, para que te sientas como en tu propia casa.<br><br>
+                    Disfruta de tus días de descanso en el corazón de la Ciudad y no dudes en consúltanos sobre la multitud de servicios que podemos ofrecerte.</p>
+            </div>
+
+
+        </div>
+        <div class="content-servicios-principal">
+            <p>SERVICIOS MÁS POPULARES</p>
+        </div>
+        <div class="content-servicios">
+            <ul>
+                <div class="content-wifi">
+                    <a class="link-wifi" href="./contactanos.html">
+                        <img class="icon-serv" src="./icons/parking.svg"/>
+                    </a>
+                    <li class="servicios">Parking cercano</li>
+                </div>
+                <div class="content-wifi">
+                    <img class="icon-serv" src="./icons/cutlery.svg"/>
+                    <li class="servicios">Desayuno</li>
+                </div>
+                <div class="content-wifi">
+                    <img class="icon-serv" src="./icons/wifi.svg"/>
+                    <li class="servicios">Wifi gratis</li>
+                </div>
+                <div class="content-wifi">
+                    <img class="icon-serv" src="./icons/air-conditioning.svg"/>
+                    <li class="servicios">Aire acondicionado</li>
+                </div>
+                <div class="content-wifi">
+                    <img class="icon-serv" src="./icons/minibar.svg"/>
+                    <li class="servicios">Mini bar</li>
+                </div>
+            </ul>
+        </div>
+
+        <div class="conocernos">   
+            <h2>VEN A CONOCERNOS</h2>
+        </div>
+
+
+        <footer class="footer">
+            <div>
+                <p class="marca">(logos redes soc.)</p>
+            </div>
+            <div>
+                <p class="marca">Derechos reservados &copy;2023</p>
+            </div>
+        </footer>
+    </main>
 </body>
 
 </html>
