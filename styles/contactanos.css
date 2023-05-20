@@ -1,0 +1,176 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    /* min-height: 100vh; */
+}
+
+
+.container-img {
+    min-height: 70vh;
+    background-image: url(../img/contacto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-img .container-txt {
+    background-color: #00000009;
+    width: 30%;
+    padding: 4em;
+    backdrop-filter: blur(3px);
+    /* border-radius: 15px; */
+    transition: 2s;
+}
+
+.text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    text-align: center;
+    color: #ffffff;
+}
+
+.text p{
+    font-family: Helvetica, sans-serif;
+    letter-spacing: .4em;
+    color: rgb(151, 151, 62);
+    font-size: .5em;
+}
+
+/* !!!!!!!! */
+
+.container-all-contacto {
+    background-color: #644d30;
+    display: flex;
+    padding: 3em;
+}
+
+.container-contacto div {
+    /* background-color: aqua; */
+    height: 6em;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-contacto h2{
+    /* background-color: chartreuse; */
+    width: 20em;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+
+.container-contacto .text-contacto{
+    /* background-color: coral; */
+    width: 36em;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: right;
+    letter-spacing: .4em;
+    color: rgb(151, 151, 62);;
+    /* font-size: .5em; */
+}
+
+.container-contacto .contacto {
+    /* background-color: aquamarine; */
+    list-style: none;
+    color: whitesmoke;
+    width: 29em;
+    display: flex;
+    flex-direction: column;
+    padding-left: 19em;
+    gap: 5px;
+}
+
+.container-contacto .border-contacto {
+    /* background-color: rgb(219, 173, 173); */
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    width: 25em;
+    height: 4em;
+    color: rgb(151, 151, 62);
+}
+
+.redes-contacto p {
+    /* background-color: rgb(147, 211, 134); */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: whitesmoke;
+    width: 41em;
+    height: 3em;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1em;
+}
+
+.instagram-contacto {
+    /* background-color: chocolate; */
+    width: 25px;
+}
+
+/* .img-contacto img {
+    width: 100%;
+    height: 100%;
+    padding: 0 0 100px 0;
+} */
+
+
+.map {
+    background-color: #00000013;
+    padding: 30px 0;
+}
+
+
+
+@media(max-width: 780px) {
+
+    .container-contacto {
+        transition: 2s;
+    }
+
+    .container-contacto h2{
+        /* background-color: chartreuse; */
+        width: 10em;
+    }
+    
+    
+    .container-contacto .text-contacto{
+        /* background-color: coral; */
+        width: 26em;
+    }
+    
+    .container-contacto .contacto {
+        /* background-color: aquamarine; */
+        width: 29em;
+        padding-left: 6em;
+    }
+    
+    .container-contacto .border-contacto {
+        width: 12em;
+    }
+    
+    .redes-contacto p {
+        /* background-color: rgb(147, 211, 134); */
+        width: 25em;
+    }
+    
+    .instagram-contacto {
+        /* background-color: chocolate; */
+        width: 25px;
+    }
+
+}

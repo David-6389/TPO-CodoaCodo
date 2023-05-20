@@ -1,0 +1,43 @@
+
+
+.footer {
+    background-color: rgb(74, 74, 52);
+    padding: 12px 0px;
+    margin-top: auto;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer .marca {
+    color: whitesmoke;
+    align-items: center;
+    gap: 20px;
+    display: flex;
+    padding: 5px;
+}
+
+.footer .marca .redes-container {
+    width: 10em;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.logo-redes {
+    color: whitesmoke;
+    width: 20px;
+}
+
+.numero-contacto {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 15em;
+}
+
+
+

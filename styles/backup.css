@@ -1,0 +1,58 @@
+
+
+/* .habitaciones {
+    width: 50%;
+} */
+
+
+.habitaciones p {
+    /* background-color: rgb(88, 130, 165); */
+    width: 20em;
+    height: 20em;
+}
+
+.container-medio .habitaciones-2 {
+    /* background-color: blueviolet; */
+    width: 30em;
+} 
+
+.habitaciones-2 {
+    width: 50%;
+    display: flex;
+    /* justify-content: end; */
+}
+
+.habitaciones-2 p{
+    /* background-color: rgb(88, 130, 165); */
+    width: 20em;
+    height: 20em;
+}
+
+img {
+    background-color: #c7bfaf;
+    display: block;
+    width: 70%;
+    height: auto;
+    /* padding: 1em; */
+    /* border-radius: 45px; */
+    transition: 1s;
+}
+
+/* img:hover {
+    transform: scale(1.03);
+    filter: grayscale(80%);
+} */
+
+.habitaciones .text-izq {
+    /* background-color: #6d64bb; */
+    /* padding: 4% 25% 15% 0; */
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+.habitaciones-2 .text-der {
+    /* background-color: #4ba75a; */
+    /* padding: 4% 0% 15% 25%; */
+    font-size: 20px;
+    color: whitesmoke;
+}

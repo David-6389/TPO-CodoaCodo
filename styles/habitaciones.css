@@ -1,0 +1,65 @@
+
+* {
+    box-sizing: border-box;
+}
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+main {
+    font-family: 'Raleway', sans-serif;
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+    font-size: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+.habitacion h1 {
+    font-size: 150%;
+}
+
+.habitacion a {
+    display: inline-block;
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.opciones {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.habitacion {
+    flex-basis: calc(25% - 1rem);
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.detalle {
+    flex-basis: calc(50% - 1rem);
+}
+
+.detalle a {
+    display: inline-block;
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
