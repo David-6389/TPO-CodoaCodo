@@ -26,9 +26,7 @@ body {
 .container-img .container-txt {
     width: 35%;
     padding: 4em;
-    backdrop-filter: blur(2px);
-    border-radius: 15px;
-    transition: 2s;
+    backdrop-filter: blur(3px);
 }
 
 .text {
@@ -364,5 +362,13 @@ body {
     
     .conocernos h2 {
         font-size: 1.6em;
+    }
+}
+
+
+@media(max-width: 600px) {
+
+    .container-img {
+        background-image: url(../img/Hotel_img_principal-960x540.jpg);
     }
 }

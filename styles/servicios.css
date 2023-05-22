@@ -11,7 +11,7 @@ body {
 }
 
 .container-img {
-    min-height: 80vh;
+    min-height: 100vh;
     background-image: url(../img/servicios/barra_libre.jpg);
     background-size: cover;
     background-repeat: no-repeat;

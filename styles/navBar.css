@@ -89,7 +89,6 @@ nav .encabezado {
     height: auto;
 }
 
-
 .titulo h1 {
     font-family: font-titulo;
     font-size: 2.4em;
@@ -99,16 +98,50 @@ nav .encabezado {
 }
 
 
+
+
 @media(max-width: 1125px) {
 
     .encabezado #botMenu:checked~ul {
         left: 0;
     }
 
+    /* !!!---LOGO HAMBURGUESA-------------- */
 
+    .hamb-icon {
+        /* background-color: rgba(233, 203, 203, 0.795); */
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .hamb-icon span {
+        background-color: #644d30;
+        display: block;
+        width: 100%;
+        height: 2px;
+        margin-top: 6px;
+        transform-origin: 0px 100%;
+        transition: all 300ms;
+    }
+
+    .activelinea1-hamb-icon {
+        transform: rotate(45deg) translate(-2px, 1px); 
+    }
+
+    .activelinea2-hamb-icon {
+        opacity: 0;
+        margin-left: -40px;
+    }
+
+    .activelinea3-hamb-icon {
+        transform: rotate(-45deg) translate(-4px, 2px);
+    }
+
+    /* !!!--------HASTA ACA LOGO ---------------- */
     .encabezado label {
         display: block;
-        padding: 15px;
+        padding-left: 40px;
     }
 
     .encabezado ul {
