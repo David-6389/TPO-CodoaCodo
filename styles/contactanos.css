@@ -138,34 +138,43 @@ body {
 
 @media(max-width: 780px) {
 
+    .container-img .container-txt {
+        width: 50%;
+    }
+    
+    .text {
+        font-size: 1.8em;
+    }
+    
+
     .container-contacto {
         transition: 2s;
     }
 
     .container-contacto h2{
         /* background-color: chartreuse; */
-        width: 10em;
+        width: 6em;
     }
     
     
     .container-contacto .text-contacto{
         /* background-color: coral; */
-        width: 26em;
+        width: 22em;
     }
     
     .container-contacto .contacto {
         /* background-color: aquamarine; */
         width: 29em;
-        padding-left: 6em;
+        padding-left: 1em;
     }
     
     .container-contacto .border-contacto {
-        width: 12em;
+        width: 7em;
     }
     
     .redes-contacto p {
         /* background-color: rgb(147, 211, 134); */
-        width: 25em;
+        width: 22em;
     }
     
     .instagram-contacto {

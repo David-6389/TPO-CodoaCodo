@@ -178,14 +178,15 @@ nav .encabezado {
 
     .titulo {
         /* background-color: #D88D01; */
-        width: 20em;
+        width: 15em;
         height: auto;
         color: #6d0000;
     }
 
 
     .titulo h1 {
-        font-size: 2em;
+        /* background-color: rgba(0, 255, 255, 0.993); */
+        font-size: 1.7em;
         text-align: center;
         color: #644d30;
     }
