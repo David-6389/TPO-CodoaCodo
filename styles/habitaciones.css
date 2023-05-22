@@ -1,3 +1,8 @@
+@font-face {
+    font-family: font-hab;
+    src: url(../font/Cursiva.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -60,33 +65,92 @@ body {
     padding: 1em;
 }
 
-img {
-    max-width: 100%;
-}
-
-.habitacion h1 {
-    font-size: 150%;
-}
-
-.habitacion a {
-    display: inline-block;
-    background-color: #2196F3;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
 .opciones {
+    /* background-color: aquamarine; */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 1em;
 }
 
 .habitacion {
     flex-basis: calc(25% - 1rem);
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(241, 228, 211);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: default;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease;
 }
+
+.habitacion:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    transform: translateY(-2%);
+}
+
+
+/* .habitacion:hover {
+    background-color: #644d30;
+} */
+
+.habitacion img {
+    width: 100%;
+    max-width: 1100px;
+}
+
+.habitacion h1 {
+    /* background-color: aquamarine; */
+    font-size: 1.6em;
+    font-family: font-hab;
+    color: #4c5e7c;
+    letter-spacing: 1px;
+    padding: .5em .3em;
+    /* text-align: center; */
+}
+
+.habitacion p {
+    /* background-color: aquamarine; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: #4c5e7c;
+    padding: .8em .4em;
+}
+
+.btn-container {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.btn-habitaciones {
+    background-color: whitesmoke;
+    display: flex;
+    width: 10em;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    font-size: 13px;
+    color: #644d30;
+    border-radius: 20px;
+    border: 1px solid whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 400ms;
+}
+
+.btn-habitaciones:hover {
+    background-color: #4c5e7c;
+    color: whitesmoke;
+}
+
+img {
+    max-width: 100%;
+}
+
 
 .info {
     display: flex;
