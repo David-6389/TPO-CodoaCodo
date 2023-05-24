@@ -54,15 +54,26 @@ body {
     font-size: .5em;
 }
 
+.container-img-text {
+    min-height: 30vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/habitaciones/madera.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 10px solid #332515;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .text-medio {
-    background-image: linear-gradient(10deg, #644d30 50%, #34818f 100%);
-    /* background-color: #644d30; */
+    background-color: #eeeeee1f;
     text-align: center;
     font-family: Helvetica, sans-serif;
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: whitesmoke;
-    padding: 4em 9em;
+    padding: 10px;
 }
 
 .text-medio p {
@@ -259,3 +270,55 @@ body {
 }
 
 /* !   MAS INFO */
+
+
+
+@media(max-width: 1200px) {
+
+    .container-img .container-txt {
+        width: 70%;
+        padding: 2em;
+    }
+    
+    .text {
+        font-size: 1em;
+    }
+    
+    .text h2{
+        font-size: .6em;
+    }
+
+    .text-medio {
+        /* background-color: #eeeeee1f; */
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .hab-paramount {
+        padding: 40px 25px;
+    }
+    
+    .hab-paramount p {
+        font-size: 1.5em;
+    }
+
+
+    .opciones {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 2em;
+    }
+
+}
+
+
+
+@media(max-width: 730px) {
+
+    .opciones {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        padding: 3em;
+    }
+}
