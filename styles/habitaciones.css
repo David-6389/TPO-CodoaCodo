@@ -181,10 +181,45 @@ body {
 
 /* !   MAS INFO */
 
-.masInfo img {
-    max-width: 100%;
-    /* border: 2px solid #4c5e7c; */
+.info-prueba{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: transform 300ms ease-in-out;
 }
+
+.info-prueba:target {
+    transform: scale(1);
+}
+
+.info-prueba img {
+    width: 65vw;
+    max-height: 75vh;
+}
+
+.close {
+    background: rgba(109, 18, 6, 0.8);
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    top: 40px;
+    right: 40px;
+    color: rgba(245, 245, 220, 0.8);
+    border-radius: 50%;
+    text-decoration: none;
+}
+
 
 /* .masInfo {
     background-color: aquamarine;
