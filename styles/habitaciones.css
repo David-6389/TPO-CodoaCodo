@@ -183,7 +183,7 @@ body {
 
 .masInfo img {
     max-width: 100%;
-    border: 2px solid #4c5e7c;
+    /* border: 2px solid #4c5e7c; */
 }
 
 /* .masInfo {
@@ -211,6 +211,7 @@ body {
     flex-basis: calc(50% - 1rem);
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     /* padding: 2px; */
     border-radius: 50px;
@@ -236,10 +237,53 @@ body {
 
 .detalle p {
     background-color: #0242281e;
+    width: 60%;
     padding: 2em 6em;
     border-radius: 15px;
     color: #4c5e7c;
 }
+
+.content-icons-hab ul{
+    /* background-color: aquamarine; */
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: #81868d;
+    list-style: none;
+}
+
+.content-icons-hab .content-icons {
+    /* background-color: blueviolet; */
+    width: 110px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgb(175, 175, 175);
+}
+
+.content-icons-hab .content-icons-ultimo {
+    width: 110px;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    /* border-right: 1px solid #81868d; */
+}
+
+.content-icons-hab .icon-habitacion {
+    /* background-color: #4c5e7c; */
+    width: 20px;
+    color: gray
+}
+
+
+.content-icons-hab li{
+    font-size: 12px;
+}
+
+
 
 .btn-container-info {
     /* background-color: aqua; */
