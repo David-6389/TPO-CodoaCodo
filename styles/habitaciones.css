@@ -179,7 +179,10 @@ body {
     color: whitesmoke;
 }
 
-/* !   MAS INFO */
+
+
+/* ?  PRUEBA DE VER MAS HABITACIONES */
+
 
 .info-prueba{
     position: fixed;
@@ -188,8 +191,10 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100vh;
+    /* padding: 100px; */
     z-index: 1000;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     transform: scale(0);
@@ -201,8 +206,9 @@ body {
 }
 
 .info-prueba img {
-    width: 65vw;
-    max-height: 75vh;
+    width: 45vw;
+    max-height: 65vh;
+    /* padding: 20px 0; */
 }
 
 .close {
@@ -220,11 +226,13 @@ body {
     text-decoration: none;
 }
 
+/* ?  HASTA ACA --------- PRUEBA DE VER MAS HABITACIONES */
 
 /* .masInfo {
     background-color: aquamarine;
 } */
 
+/* !   MAS INFO */
 
 .info {
     /* background-color: #4c5e7c; */
@@ -242,14 +250,15 @@ body {
 }
 
 .detalle {
-    background-color: rgb(241, 228, 211);
-    flex-basis: calc(50% - 1rem);
+    background-color: rgba(241, 228, 211, 0.9);
+    /* flex-basis: calc(50% - 1rem); */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    /* padding: 2px; */
-    border-radius: 50px;
+    width: 60vw;
+    height: 35%;
+    border-radius: 25px;
 }
 
 /* .detalle:hover {
@@ -267,12 +276,13 @@ body {
     font-family: font-hab;
     color: #4c5e7c;
     letter-spacing: 1px;
-    padding: .5em .3em;
+    /* padding: .5em .3em; */
 }
 
 .detalle p {
     background-color: #0242281e;
     width: 60%;
+    text-align: center;
     padding: 2em 6em;
     border-radius: 15px;
     color: #4c5e7c;
