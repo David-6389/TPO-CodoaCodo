@@ -17,9 +17,9 @@ body {
     font-family: Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     /* min-height: 100vh; */
 }
-
 
 .container-img {
     min-height: 100vh;
@@ -82,7 +82,7 @@ body {
 }
 
 .hab-paramount {
-    /* background-color: aquamarine; */
+    background-color: whitesmoke;
     padding: 3em;
 }
 
@@ -96,7 +96,7 @@ body {
 
 
 .opciones {
-    /* background-color: aquamarine; */
+    background-color: whitesmoke;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -180,18 +180,13 @@ body {
 }
 
 
-
-/* ?  PRUEBA DE VER MAS HABITACIONES */
-
-
-.info-prueba{
+.info{
     position: fixed;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100vh;
-    /* padding: 100px; */
     z-index: 1000;
     display: flex;
     flex-direction: column;
@@ -201,52 +196,14 @@ body {
     transition: transform 300ms ease-in-out;
 }
 
-.info-prueba:target {
+.info:target {
     transform: scale(1);
 }
 
-.info-prueba img {
+.info img {
     width: 45vw;
     max-height: 65vh;
     /* padding: 20px 0; */
-}
-
-.close {
-    background: rgba(109, 18, 6, 0.8);
-    display: block;
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    top: 40px;
-    right: 40px;
-    color: rgba(245, 245, 220, 0.8);
-    border-radius: 50%;
-    text-decoration: none;
-}
-
-/* ?  HASTA ACA --------- PRUEBA DE VER MAS HABITACIONES */
-
-/* .masInfo {
-    background-color: aquamarine;
-} */
-
-/* !   MAS INFO */
-
-.info {
-    /* background-color: #4c5e7c; */
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    flex-wrap: wrap;
-}
-
-.detalle-img {
-    flex-basis: calc(50% - 1rem);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 }
 
 .detalle {
@@ -261,21 +218,12 @@ body {
     border-radius: 25px;
 }
 
-/* .detalle:hover {
-    margin-left: 100px;
-} */
-
-/* .detalle .card {
-    background-color: #a3ca46;
-    padding: 3em;
-} */
-
 .detalle h1{
     /* background-color: aquamarine; */
     font-size: 1.6em;
     font-family: font-hab;
     color: #4c5e7c;
-    letter-spacing: 1px;
+    letter-spacing: 1.3px;
     /* padding: .5em .3em; */
 }
 
@@ -329,7 +277,6 @@ body {
 }
 
 
-
 .btn-container-info {
     /* background-color: aqua; */
     display: flex;
@@ -357,9 +304,6 @@ body {
     background-color: #4c5e7c;
     color: whitesmoke;
 }
-
-/* !   MAS INFO */
-
 
 
 @media(max-width: 1200px) {
@@ -398,6 +342,63 @@ body {
         gap: 2em;
     }
 
+
+    .info img {
+        width: 85vw;
+        max-height: 80vh;
+    }
+
+    .detalle {
+        width: 80vw;
+        height: 33%;
+    }
+
+    .detalle h1{
+        font-size: 1.4em;
+    }
+
+    .detalle p {
+        width: 80%;
+        font-size: 14px;
+        padding: 1em 3em;
+    }
+
+    .content-icons-hab {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .content-icons-hab ul{
+        width: 100%;
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .content-icons-hab li {
+        font-size: 11px;
+    }
+
+    .content-icons-hab .content-icons {
+        width: 80px;
+        gap: 5px;
+    }
+    
+    .content-icons-hab .content-icons-ultimo {
+        width: 80px;
+        gap: 5px;
+    }
+
+    .btn-container-info .btn-info {
+        width: 15em;
+        font-size: 10px;
+    }
+
+    .btn-info:hover {
+        background-color: #4c5e7c;
+        color: whitesmoke;
+    }
+
 }
 
 
@@ -409,5 +410,57 @@ body {
         flex-direction: column;
         gap: 2em;
         padding: 3em;
+    }
+
+    .info img {
+        width: 90vw;
+        max-height: 65vh;
+    }
+
+    .detalle {
+        width: 90vw;
+        height: 35%;
+    }
+
+    .detalle h1{
+        font-size: 1.3em;
+    }
+
+    .detalle p {
+        width: 80%;
+        font-size: 13px;
+        padding: 1em 2em;
+    }
+
+    .content-icons-hab {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .content-icons-hab ul{
+        width: 100%;
+        padding: 5px;
+        font-size: 12px;
+    }
+    
+    .content-icons-hab .content-icons {
+        width: 85px;
+        gap: 5px;
+    }
+    
+    .content-icons-hab .content-icons-ultimo {
+        width: 80px;
+        gap: 5px;
+    }
+    
+    .content-icons-hab .icon-habitacion {
+        width: 20px;
+        color: gray
+    }
+    
+    
+    .content-icons-hab li{
+        font-size: 9px;
     }
 }
