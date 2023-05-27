@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* min-height: 100vh; */
+    min-height: 100vh;
 }
 
 .container-img {
@@ -25,7 +25,7 @@ body {
 
 .container-img .container-txt {
     /* background-color: #85853ba1; */
-    width: 50%;
+    width: 35%;
     padding: 4em;
     backdrop-filter: blur(2px);
 }
@@ -60,13 +60,13 @@ body {
     text-align: center;
     font-size: 2em;
     color: slategray;
-    /* padding-bottom: 25px;
-    border-bottom: 1px solid black; */
+    padding: 40px;
+    /*border-bottom: 1px solid black; */
     /* transition: 4s; */
 }
 
 .container-img-2 {
-    min-height: 80vh;
+    min-height: 50vh;
     background-image: url(../img/servicios/buffet.jpg);
     background-size: cover;
     background-repeat: no-repeat;

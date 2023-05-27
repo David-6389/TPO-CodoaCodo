@@ -9,7 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* min-height: 100vh; */
+    min-height: 100vh;
 }
 
 
@@ -26,12 +26,9 @@ body {
 }
 
 .container-img .container-txt {
-    background-color: #00000009;
     width: 30%;
     padding: 4em;
     backdrop-filter: blur(3px);
-    /* border-radius: 15px; */
-    transition: 2s;
 }
 
 .text {
