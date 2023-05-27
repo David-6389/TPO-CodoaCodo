@@ -10,7 +10,7 @@ body {
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .container-img {
@@ -48,7 +48,6 @@ body {
 
 .container-txt-medio {
     background-color: whitesmoke;
-    width: 100%;
     height: 25em;
     display: flex;
     justify-content: center;
@@ -57,10 +56,10 @@ body {
 
 .container-txt-medio p {
     background-color: #00000011;
-    width: 70%;
+    max-width: 70%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     color: slategray;
     padding: 40px;
     /*border-bottom: 1px solid black; */
@@ -68,7 +67,7 @@ body {
 }
 
 .container-img-2 {
-    min-height: 50vh;
+    min-height: 60vh;
     background-image: url(../img/servicios/buffet.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -88,10 +87,11 @@ body {
 }
 
 .container-img-2 .container-txt{
-    width: 70%;
-    padding: 5em;
+    /* background-color: cornflowerblue; */
+    /* width: 70%; */
+    padding: 10px;
     backdrop-filter: blur(2px);
-    border-radius: 15px;
+    /* border-radius: 15px; */
 }
 
 .container-img-2 .text p{
@@ -147,21 +147,10 @@ body {
     /* flex-direction: column; */
 }
 
-.container-servicios ul .alojamiento{
-    /* background-color: rgb(153, 33, 137); */
-    width: 25%;
-    border-right: 1px solid #644d30;
-}
-
-.container-servicios ul .habitacion{
-    /* background-color: rgb(153, 33, 137); */
-    width: 25%;
-    border-right: 1px solid #644d30;
-}
-
-.container-servicios ul .restauracion{
-    /* background-color: rgb(153, 33, 137); */
-    width: 25%;
+.container-servicios ul .border {
+    background-color: #3a2c1c;
+    width: 1px;
+    height: 150px;
 }
 
 .container-servicios h3{
@@ -174,7 +163,7 @@ body {
 
 .container-servicios ul li{
     /* background-color: aquamarine; */
-    width: 15em;
+    max-width: 15em;
     display: flex;
     gap: 5px;
 }
@@ -249,22 +238,14 @@ body {
         flex-direction: column;
         align-items: center;
     }
-    
-    .container-servicios ul .alojamiento{
-        width: 210px;
-        border-right: none;
-        border-bottom: 1px solid #644d30;
-    }
-    
-    .container-servicios ul .habitacion{
-        width: 210px;
-        border-right: none;
-        border-bottom: 1px solid #644d30;
-    }
 
-    .container-servicios ul .restauracion{
-        width: 210px;
+
+    .container-servicios ul .border {
+        background-color: #3a2c1c;
+        width: 250px;
+        height: 1px;
     }
+    
 }
 
 
@@ -272,44 +253,5 @@ body {
     
     .container-servicios h2{
         font-size: 30px;
-        width: 20em;
     }
-}
-
-
-
-
-
-
-.container-contacto {
-    transition: 2s;
-    /* box-sizing: border-box; */
-}
-
-.container-contacto h2{
-    background-color: chartreuse;
-    width: 6em;
-}
-
-
-.container-contacto .text-contacto{
-    background-color: coral;
-    width: 22em;
-}
-
-.container-contacto .contacto {
-    background-color: aquamarine;
-    max-width: 29em;
-    padding-left: .1em;
-}
-
-
-.redes-contacto p {
-    background-color: rgb(147, 211, 134);
-    width: 22em;
-}
-
-.instagram-contacto {
-    /* background-color: chocolate; */
-    width: 25px;
 }
