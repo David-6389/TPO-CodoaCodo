@@ -102,24 +102,6 @@ body {
     font-weight: lighter;
 }
 
-.containerBtn .btn-reserva {
-    background-color: rgba(245, 245, 245, 0.171);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    height: 40px;
-    color: whitesmoke;
-    border-radius: 4px;
-    padding: 0 30px;
-    transition: 500ms;
-    border: 1px solid whitesmoke;
-}
-
-.btn-reserva:hover {
-    background-color: #644d30;
-    color: whitesmoke;
-    border: 1px solid #644d30;
-    padding: 0 40px;
-}
-
 .container-servicios {
     /* background-color: aqua; */
     /* width: 100%; */

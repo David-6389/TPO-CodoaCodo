@@ -1,0 +1,113 @@
+
+.submit-btn {
+    background-color: whitesmoke;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #644d30;
+    border-radius: 4px;
+    /* padding: 0 10px; */
+    transition: 400ms;
+    border: 1px solid #644d30;
+    text-decoration: none;
+}
+
+.submit-btn:hover {
+    background-color: #644d30;
+    color: whitesmoke;
+}
+
+.modal-container{
+    background-color: rgba(0, 0, 0, .7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+}
+
+
+.modal {
+    background-color: whitesmoke;
+    width: 30%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 1s;
+    transform: translateY(0);
+    border-radius: 10px;
+}
+
+
+.close {
+    background-color: whitesmoke;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    color: #644d30;
+    border-radius: 4px;
+    padding: 0 10px;
+    transition: 400ms;
+    border: 1px solid #644d30;
+    text-decoration: none;
+}
+
+.close:hover {
+    background-color: #644d30;
+    color: whitesmoke;
+}
+
+
+.modal-close {
+    transform: translateY(-200%);
+}
+
+.inputr {
+    padding: 0 18px;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.form {
+    background-color: #4c5e7c;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.form h2 {
+    font-size: 20px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.form label {
+    color: whitesmoke;
+    display: flex;
+    gap: 5px;
+}
+
+.form span {
+    color: rgb(138, 0, 0);
+    font-size: 10px;
+}
